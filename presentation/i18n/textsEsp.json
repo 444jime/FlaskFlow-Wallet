@@ -1,0 +1,9 @@
+{
+    "appTitle":"Login",
+    "user": "Usuario",
+    "userPh": "Ingresa tu usuario",
+    "pwd": "Clave",
+    "pwdph": "Ingrese su clave",
+    "login": "Iniciar sesion",
+    "wrongcredentials": "Credenciales incorrectas"
+}
