@@ -2,29 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear cuenta</title>
+    <title>{{text["appTitle"]}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div>
+    <div class="login-container select-custom-wrapper">
+
         <form method="post">
-            <select name="moneda" id="moneda">
+            <select name="moneda" id="moneda" class="select-custom">
                 {%for rate in rates.keys()%}
                 <option value="{{rate}}">{{rate}}</option>
                 {%endfor%}
             </select>
-
-            <button type="submit">
-            Crear
-            </button>
-
-            {%if mensaje%}
-            <div>
-                {{mensaje}}! Saldo inicial: 0.00
+            
+            <div class="button-container">
+                <button type="submit" class="btn btn-crear"> {{text["appTitle"]}} </button>
+                <button type ="button" class="btn btn-volver" onclick="location.href='welcome'"> {{text["btnBack"]}} </button>
             </div>
-            {%endif%}
 
-            <button type ="button" onclick="location.href='welcome'"> volver</button>
+            {% if mensaje %}
+            <div class="message {% if tipo_mensaje == 'success' %}message-success{% else %}message-error{% endif %}">
+                {{ mensaje }}
+            </div>
+            {% if tipo_mensaje == 'success' %}
+                <div class="message-saldo">
+                {{text["balance"]}}
+                </div>
+            {% endif %}
+            {% endif %}
 
         </form>
     </div>

@@ -1,6 +1,5 @@
 import json
 
-
 def openFile(route):
     with open(route,"r") as f:
         return json.loads(f.read())

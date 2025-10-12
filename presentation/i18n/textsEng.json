@@ -1,9 +1,24 @@
 {
-    "appTitle":"Login",
-    "user": "Username",
-    "userPh": "Ingresa tu usuario",
-    "pwd": "Contraseña",
-    "pwdph": "Ingrese su contraseña",
-    "login": "Login",
-    "wrongcredentials": "Credenciales incorrectas"
+    "login": {
+        "appTitle":"Login",
+        "user": "Username",
+        "userPh": "Enter your username",
+        "pwd": "Password",
+        "pwdph": "Enter your password",
+        "login": "Login",
+        "wrongcredentials": "Incorrect credentals"
+    },
+    "welcome": {
+        "welcome": "Welcome to the Currency Trading App!",
+        "currency": "Currency",
+        "balance": "Balance",
+        "btnCreateAcc": "Create Account"
+    },
+    "createAcc": {
+        "appTitle": "Create Account",
+        "btnBack": "Go Back",
+        "balance": "Initial balance: 0.00",
+        "okey": "Account created succesfully.",
+        "error": "Account already exists, please choose another."
+    }
 }
