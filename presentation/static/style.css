@@ -80,6 +80,123 @@ input[type="submit"]:hover {
   transform: scale(1.03);
 }
 
+/* Clase base para todos los botones */
+.btn {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+/* Tipo Crear */
+.btn-crear {
+  background: linear-gradient(135deg, #4cafef, #007acc);
+  color: #ffffff;
+}
+
+.btn-crear:hover {
+  background: linear-gradient(135deg, #66d0ff, #0096ff);
+  transform: scale(1.05);
+}
+
+/* Tipo Volver */
+.btn-volver {
+  background: linear-gradient(135deg, #e0e0e0, #b0b0b0);
+  color: #1e1e1e;
+}
+
+.btn-volver:hover {
+  background: linear-gradient(135deg, #d0d0d0, #999999);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Estado activo y focus común para todos */
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Select base */
+.select-custom {
+  width: 360px;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Foco del select */
+.select-custom:focus {
+  outline: none;
+  border: 1px solid #4cafef;
+  background-color: #333333;
+}
+
+
+/* Opciones */
+.select-custom option {
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  padding: 0.5rem 1rem;
+}
+
+/* Contenedor de mensajes dinámicos */
+.message {
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  max-width: 360px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Mensaje de éxito */
+.message-success {
+  background: linear-gradient(135deg, #4cafef, #007acc);
+  color: #ffffff;
+}
+
+/* Mensaje de error */
+.message-error {
+  background: rgba(255, 77, 77, 0.2);
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+}
+
+.message-saldo {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #e0e0e0;
+}
+
+
+/* login */
 .login-error{
   color: red;
   background-color: rgb(255, 77, 77, 0.12);
@@ -138,13 +255,14 @@ input[type="submit"]:hover {
   color: #d42828;
   font-weight: 500;
 }
+
 /* Animación */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* animacion de "error" */
+/* Animacion de "error" */
 @keyframes shake {
   0% { transform: translateX(0px);}
   20% { transform: translateX(-3px);}

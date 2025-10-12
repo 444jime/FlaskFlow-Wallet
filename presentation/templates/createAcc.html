@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{text["appTitle"]}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="login-container select-custom-wrapper">
+
+        <form method="post">
+            <select name="moneda" id="moneda" class="select-custom">
+                {%for rate in rates.keys()%}
+                <option value="{{rate}}">{{rate}}</option>
+                {%endfor%}
+            </select>
+            
+            <div class="button-container">
+                <button type="submit" class="btn btn-crear"> {{text["appTitle"]}} </button>
+                <button type ="button" class="btn btn-volver" onclick="location.href='welcome'"> {{text["btnBack"]}} </button>
+            </div>
+
+            {% if mensaje %}
+            <div class="message {% if tipo_mensaje == 'success' %}message-success{% else %}message-error{% endif %}">
+                {{ mensaje }}
+            </div>
+            {% if tipo_mensaje == 'success' %}
+                <div class="message-saldo">
+                {{text["balance"]}}
+                </div>
+            {% endif %}
+            {% endif %}
+
+        </form>
+    </div>
+</body>
+</html>

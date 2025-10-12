@@ -7,10 +7,11 @@
 </head>
 <body>
   <div class="login-container">
+    
     {% if welcomeText  %}
-     <h1>Bienvenido a la aplicacion {{ welcomeText  }}</h1> 
+     <h1>{{text["welcome"]}} {{ welcomeText  }}</h1> 
     {% else %}
-    <h1>Bienvenido a la aplicacion</h1>
+    {{text["welcome"]}}
     {% endif %}
 
     <div class="table-container">
@@ -18,8 +19,8 @@
         <thead>
 
           <tr>
-            <th>Moneda</th>
-            <th>Saldo</th>
+            <th>{{text["currency"]}}</th>
+            <th>{{text["balance"]}}</th>
           </tr>
 
         </thead>
@@ -35,6 +36,9 @@
       </table>
     </div>
 
+    <div class="button-container">
+      <button class="btn btn-crear" id="createAcc" onclick="location.href='createAcc'">{{text["btnCreateAcc"]}}</button>
+    </div>
   </div>
   
 </body>

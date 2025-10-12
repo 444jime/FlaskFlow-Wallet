@@ -1,9 +1,24 @@
 {
-    "appTitle":"Login",
-    "user": "Usuario",
-    "userPh": "Ingresa tu usuario",
-    "pwd": "Clave",
-    "pwdph": "Ingrese su clave",
-    "login": "Iniciar sesion",
-    "wrongcredentials": "Credenciales incorrectas"
+    "login": {
+        "appTitle":"Login",
+        "user": "Usuario",
+        "userPh": "Ingresa tu usuario",
+        "pwd": "Clave",
+        "pwdph": "Ingrese su clave",
+        "login": "Iniciar sesion",
+        "wrongcredentials": "Credenciales incorrectas"
+    },
+    "welcome": {
+        "welcome":"Bienvenido a la aplicacion",
+        "currency":"Moneda",
+        "balance": "Saldo",
+        "btnCreateAcc": "Crear cuenta"
+    },
+    "createAcc": {
+        "appTitle": "Crear cuenta",
+        "btnBack": "Volver",
+        "balance": "Saldo inicial: 0.00",
+        "okey": "Cuenta creada correctamente.",
+        "error": "Cuenta existente, ingrese otra."
+    }
 }
