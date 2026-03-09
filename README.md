@@ -26,7 +26,7 @@ A web-based platform designed to showcase modern user interface patterns for fin
 
 1. **Clone the repository**:
    ```bash
-   git clone [https://github.com/your-username/wallet-page-project.git](https://github.com/your-username/wallet-page-project.git)
+   git clone [https://github.com/444jime/FlaskFlow-Wallet.git](https://github.com/444jime/FlaskFlow-Wallet.git)
    cd wallet-page-project
    ```
 
